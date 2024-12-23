@@ -1,0 +1,17 @@
+* {
+    font-family: sans-serif;
+    background-color: white;
+}
+
+.headline {
+    font-family: sans-serif;
+}
+
+.introduction {
+    display: flex;
+    justify-content: center;
+}
+
+.introduction-sub-sect {
+    padding: 1rem;
+}
