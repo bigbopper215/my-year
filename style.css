@@ -125,6 +125,16 @@ section {
     text-align: center;
 }
 
+#feb-container {
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+}
+
+
+.feb-items {
+    margin-top: 50;
+}
+
 .hidden {
     opacity: 0;
     filter: blur(2px);
@@ -151,13 +161,13 @@ section {
     }
 }
 
-.feb-item1 {
+#feb-item1 {
     display: flex;
     gap: 20px;
     text-align: left;
 }
 
-.feb-item2 {
+#feb-item2 {
     display: flex;
     gap: 20px;
     text-align: left
@@ -168,3 +178,8 @@ section {
     justify-content: center;
     gap: 20px;
 }
+
+#feb {
+
+}
+
