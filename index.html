@@ -2,23 +2,188 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My website</title>
   </head>
   <body>
+    <!-- 
+    <nav id="vertical-nav">
+      <ul>
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#january">January</a></li>
+        <li><a href="#february">February</a></li>
+        <li><a href="#march">March</a></li>
+        <li><a href="#april">April</a></li>
+        <li><a href="#may">May</a></li>
+        <li><a href="#june">June</a></li>
+        <li><a href="#july">July</a></li>
+        <li><a href="#august">August</a></li>
+        <li><a href="#september">September</a></li>
+        <li><a href="#october">October</a></li>
+        <li><a href="#november">November</a></li>
+        <li><a href="#december">December</a></li>
+      </ul>
+    </nav>
+    -->
+
+    <nav id="desktop-nav">
+      <div class="logo">BL</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
     <!-- This is how to comment-->
-    <div class="introduction">
-        <div class="introduction-sub-sect">
-            <h1 class="headline">Brandon Liu's 2024 in Review</h1>
-            <p>Welcome, here are some things that happened in the past year. Enjoy.</p>
+    <section id="intro" class="hidden">
+      <div id="box1">
+        <h1>Brandon's 2024 Wrapped</h1>
+        <p id="text1">
+          Welcome to my past year filled with [not] so many highlights!
+        </p>
+      </div>
+    </section>
+
+    <section id="month-title" class="hidden">
+      <div id="box1">
+        <h1>January</h1>
+        <p>A few fun moments</p>
+        <div class="hidden">
+          <img src="./assets/images/jan/IMG_6178.JPG" height="300" />
+          <img src="./assets/images/jan/IMG_4608.jpg" height="300" />
         </div>
-      <a href="https://soundcloud.com/chop2615" target="_blank">
-        <img src="./assets/images/brandonpic.jpeg" alt="picture" height="150" />
-      </a>
-    </div>
-    <hr />
+        <p>
+          Turned 21 and for the first weekend back from winter break my friends
+          and I drank a lot of things.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <h1>Rating?</h1>
+        <h2 class="show2">5.2/10</h2>
+      </div>
+    </section>
+
+    <section id="feb" class="hidden">
+      <div id="box1">
+        <section id="month-title">
+          <h1>February</h1>
+          <p>Nothing out of the ordinary</p>
+      </div>
+      </section>
+
+      <!-- first item -->
+      <section>
+        <div class="feb-item1">
+          <div>
+            <img src="./assets/images/feb/IMG_9069.jpg" height="300" alt="" />
+          </div>
+  
+          <div class="text">
+            <p>
+              Ate at the CIA with some friends. Food was very good and got free
+              dessert.
+            </p>
+          </div>
+        </div>
+  
+        <!-- second item -->
+        <div class="feb-item2">
+          <div>
+            <img src="./assets/images/feb/IMG_4738.jpg" height="300" alt="" />
+          </div>
+          <div class="text">
+            <p>Bought Ableton and made a bunch of bad music and still do.</p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section id="march" class="hidden">
+      <h2>March</h2>
+      <h3>Made great memories 8/10</h3>
+      <p>Went to Puerto Rico for spring break with my friends.</p>
+      <div id="pr-container">
+        <div id="march-item1">
+          <div>Our house</div>
+          <div>
+            <video
+              autoplay
+              loop
+              muted
+              src="./assets/images/march/prvid.mp4"
+              height="300"
+            ></video>
+          </div>
+        </div>
+        <div id="march-item2">
+          <div>Castillo San felipe del Morro</div>
+          <div>
+            <img src="./assets/images/march/IMG_4954.jpg" height="300" alt="" />
+          </div>
+        </div>
+      </div>
+      <p>
+        Was a super fun month. Definitely one of the better months of the year.
+        Had the parlay of my life hit that was +9623.
+      </p>
+      <div id="sports-betting">
+        <img src="./assets/images/march/IMG_5359.PNG" height="300" />
+      </div>
+    </section>
+
+    <section class="hidden">
+      <h2>April</h2>
+      <p></p>
+    </section>
+
+    <section class="hidden">
+      <h2>May</h2>
+      <p></p>
+    </section>
+
+    <section class="hidden">
+      <h2>June</h2>
+      <p></p>
+    </section>
+
+    <section class="hidden">
+      <h2>July</h2>
+      <p></p>
+    </section>
+
+    <section class="hidden">
+      <h2>August</h2>
+      <p></p>
+    </section>
+
+    <section class="hidden">
+      <h2>September</h2>
+      <p></p>
+    </section>
+
+    <section class="hidden">
+      <h2>October</h2>
+      <p></p>
+    </section>
+
+    <section class="hidden">
+      <h2>November</h2>
+      <p></p>
+    </section>
+
+    <section class="hidden">
+      <h2>December</h2>
+      <p></p>
+    </section>
+
     <!-- 
     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
       Learn more about me
@@ -27,8 +192,8 @@
     <br>
     <video controls src="./assets/video/llcelebration.mp4" height="300"></video>
     -->
+    <!-- 
 
-    <!-- January -->
     <div class="January">
       <h2>JANUARY</h2>
       <p>
@@ -46,7 +211,7 @@
       ></audio>
     </div>
     <hr />
-    <!-- FEBRUARY -->
+
     <div class="February">
       <h2>FEBRUARY</h2>
       <p>
@@ -64,5 +229,6 @@
       ></audio>
     </div>
     <hr />
+    -->
   </body>
 </html>

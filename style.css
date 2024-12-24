@@ -1,17 +1,170 @@
-* {
+body {
+    background-color: #131316;
+    color: #ffffff;
     font-family: sans-serif;
-    background-color: white;
+    padding: 0;
+    margin: 0;
 }
 
-.headline {
-    font-family: sans-serif;
+html {
+    scroll-snap-type: y mandatory;
 }
 
-.introduction {
+/* VERTICAL NAV */
+
+#vertical-nav {
+    position: fixed;
+    right: 0; /* Aligns the nav bar to the far right */
+    top: 50%;
+    transform: translateY(-50%); /* Centers it vertically */
+    /*background-color: #f8f8f8; /* Light background for visibility */
+    /*border-left: 2px solid #ccc; /* Optional border for distinction */
+    padding: 10px 20px;
+    z-index: 1000; /* Ensures it stays above other elements */
+  }
+  
+  #vertical-nav ul {
+    list-style-type: none; /* Removes default bullet points */
+    margin: 0;
+    padding: 0;
+  }
+  
+  #vertical-nav li {
+    margin: 5px 0;
+  }
+  
+  #vertical-nav a {
+    text-decoration: none;
+    color: #5a5959; /* Text color */
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+  
+  #vertical-nav a:hover {
+    color: white; /* Highlight color on hover */
+  }
+  
+
+/* DESKTOP NAV */
+#desktop-nav {
+    height: 30px;
+    background-color: #210a43;
+}
+
+nav, 
+.nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover {
+    color: rgb(42, 145, 145);
+    /*
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+    */
+}
+
+
+#intro {
+    color: rgb(0, 174, 239);
+    font-size: 110px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin-right: 100px;
+}
+
+#month-title {
+    font-size: 90px;
+    margin-bottom: 0;
+}
+
+#box1 h1 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+#box1 p {
+    margin-top: 10px;
+    font-size: large;
+}
+
+#text1 {
+    color: #ffffff;
+    font-size: 40px;
+}
+
+section {
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+    margin-right: 100px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(2px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.show2 {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    animation-delay: 5s;
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.feb-item1 {
+    display: flex;
+    gap: 20px;
+    text-align: left;
+}
+
+.feb-item2 {
+    display: flex;
+    gap: 20px;
+    text-align: left
+}
+
+#pr-container {
     display: flex;
     justify-content: center;
-}
-
-.introduction-sub-sect {
-    padding: 1rem;
+    gap: 20px;
 }
