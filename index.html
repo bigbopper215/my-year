@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,7 +29,7 @@
       </ul>
     </nav>
     -->
-
+    <!-- 
     <nav id="desktop-nav">
       <div class="logo">BL</div>
       <div>
@@ -38,9 +39,10 @@
         </ul>
       </div>
     </nav>
+    -->
 
     <!-- This is how to comment-->
-    <section id="intro" class="hidden">
+    <section id="intro">
       <div id="box1">
         <h1>Brandon's 2024 Wrapped</h1>
         <p id="text1">
@@ -49,30 +51,45 @@
       </div>
     </section>
 
-    <section id="month-title" class="hidden">
-      <div id="box1">
+
+    <div id="jan" class="month">
+      <div id="jan-head" class="hidden">
         <h1>January</h1>
         <p>A few fun moments</p>
-        <div class="hidden">
-          <img src="./assets/images/jan/IMG_6178.JPG" height="300" />
-          <img src="./assets/images/jan/IMG_4608.jpg" height="300" />
+      </div>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur quo nam amet neque recusandae molestias. Qui, laboriosam? Tempore asperiores beatae veniam aliquam nam iure eum suscipit voluptas pariatur dolores? Eum?</p>
+      <div id="jan-images">
+        <img src="./assets/images/jan/IMG_6178.JPG" height="300" />
+        <img src="./assets/images/jan/IMG_4608.jpg" height="300" />
+      </div>
+      <p>
+        Overall January was decent. 
+      </p>
+    </div>
+
+
+    <div id="feb" class="month">
+      <div id="feb-head" class="hidden">
+        <h1>February</h1>
+        <p>Nothing out of the ordinary</p>
+      </div>
+      <div id="feb-images" class="hidden-right">
+        <div>
+          <img src="./assets/images/feb/IMG_9069.jpg" height="300" alt="" />
+          <div>
+            <p>
+              Ate at the Culinary Institute of America with some friends. Food was very good and got free
+              dessert.
+            </p>
+          </div>
         </div>
-        <p>
-          Turned 21 and for the first weekend back from winter break my friends
-          and I drank a lot of things.
-        </p>
+        <div>
+          <img src="./assets/images/feb/IMG_4738.jpg" height="300" alt="" />
+        </div>
       </div>
-    </section>
+    </div>
 
-    <section>
-      <div>
-        <h1>Rating?</h1>
-        <h2 class="show2">5.2/10</h2>
-      </div>
-    </section>
-
-
-    <div id="feb-container">
+    <div id="feb-container" class="month">
       <div class="hidden">
         <div id="box1">
           <div id="month-title">

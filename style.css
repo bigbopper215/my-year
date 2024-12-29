@@ -85,7 +85,7 @@ a:hover {
 
 
 #intro {
-    color: rgb(0, 174, 239);
+    color: #3ACDC1;
     font-size: 110px;
     display: grid;
     place-items: center;
@@ -125,6 +125,42 @@ section {
     text-align: center;
 }
 
+div {
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+}
+
+.month {
+    min-height: 100vh;
+    margin-left: 90px;
+}
+
+#jan-head {
+    font-size: 90px;
+}
+
+#jan-head h1 {
+    margin-bottom: 0px;
+}
+
+#jan-head p {
+    margin-top: 5px;
+    font-size: 25px;
+}
+
+#feb-head {
+    font-size: 90px;
+}
+
+#feb-head h1 {
+    margin-bottom: 0px;
+}
+
+#feb-head p {
+    margin-top: 5px;
+    font-size: 25px;
+}
+
 #feb-container {
     scroll-snap-align: start;
     scroll-snap-stop: normal;
@@ -141,6 +177,15 @@ section {
     transform: translateX(-100%);
     transition: all 1s;
 }
+
+/*
+.hidden-right {
+    opacity: 0;
+    filter: blur(2px);
+    transform: translateX(100%);
+    transition: all 1s;
+}
+*/
 
 .show {
     opacity: 1;
