@@ -1,7 +1,7 @@
 body {
-    background-color: #131316;
+    background-color: #dddada;
     color: #ffffff;
-    font-family: sans-serif;
+    font-family: Helvetica;
     padding: 0;
     margin: 0;
 }
@@ -48,19 +48,26 @@ html {
 /* DESKTOP NAV */
 #desktop-nav {
     height: 30px;
-    background-color: #210a43;
+    background-color: #f9f7f7;
 }
 
 nav, 
 .nav-links {
     display: flex;
+    color: #131316;
+}
+
+.logo {
+    font-weight: bolder;
 }
 
 nav {
-    justify-content: space-around;
+    padding: 10px;
     align-items: center;
+    justify-content: space-between;
     height: 17vh;
 }
+
 
 .nav-links {
     gap: 2rem;
@@ -69,7 +76,9 @@ nav {
 }
 
 a {
-    color: white;
+    color: black;
+    font-weight: bolder;
+    font-size: 12px;
     text-decoration: none;
     text-decoration-color: white;
 }
@@ -84,13 +93,55 @@ a:hover {
 }
 
 
-#intro {
-    color: #3ACDC1;
-    font-size: 110px;
-    display: grid;
-    place-items: center;
+.intro {
+    display: flex;
+    justify-content: center;
     text-align: center;
-    margin-right: 100px;
+}
+
+.intro-images-top {
+    display: flex;
+    position: absolute;
+    margin-bottom: 600px;
+    gap: 3px;
+}
+
+.intro img {
+    height: 240px;
+    width: 130px;
+    border-radius: 10px;
+    z-index: -1;
+    opacity: 0.75;
+}
+
+
+.intro-images {
+    display: flex;
+    position: absolute;
+    margin-bottom: 110px;
+    gap: 3px;
+}
+
+.intro-images-bottom {
+    display: flex;
+    position: absolute;
+    margin-top: 380px;
+    gap: 3px;
+}
+
+
+.intro h1 {
+    margin-bottom: 300px;
+    font-weight: bolder;
+}
+
+.wrapped {
+    padding-top: 70px;
+    font-weight: bold;
+    font-size: 100px;
+    color: #4ff20f;
+    text-shadow: 2px 2px 0 #0c2802;
+    flex-shrink: 0;
 }
 
 #month-title {
@@ -98,15 +149,6 @@ a:hover {
     margin-bottom: 0;
 }
 
-#box1 h1 {
-    margin-top: 0px;
-    margin-bottom: 10px;
-}
-
-#box1 p {
-    margin-top: 10px;
-    font-size: large;
-}
 
 #text1 {
     color: #ffffff;
@@ -128,6 +170,18 @@ section {
 div {
     scroll-snap-align: start;
     scroll-snap-stop: normal;
+}
+
+.jan-header {
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+    padding: 0px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 110px;
+    color: white;
+    font-weight: bold;
 }
 
 .month {
