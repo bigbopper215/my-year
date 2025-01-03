@@ -145,7 +145,12 @@ a:hover {
     font-weight: bold;
     font-size: 100px;
     color: #4ff20f;
-    text-shadow: 2px 2px 0 #0c2802;
+    text-shadow: 
+        5px 0 0 #113a02,
+       -2px 0 0 #113a02,
+        0 2px 0 #113a02,
+        0 -2px 0 #113a02
+        ;
     flex-shrink: 0;
     z-index: 1;
 }
@@ -186,8 +191,14 @@ div {
     display: flex;
     justify-content: space-evenly;
     font-size: 110px;
-    color: white;
+    color: rgb(11, 222, 0);
     font-weight: bold;
+    text-shadow: 
+        5px 0 0 #113a02,
+       -2px 0 0 #113a02,
+        0 2px 0 #113a02,
+        0 -2px 0 #113a02
+        ;
 }
 
 .month {
@@ -235,7 +246,7 @@ div {
     opacity: 0;
     filter: blur(2px);
     transform: translateX(-100%);
-    transition: all 1s;
+    transition: all 1.5s;
 }
 
 /*
