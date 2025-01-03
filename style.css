@@ -110,8 +110,13 @@ a:hover {
     height: 240px;
     width: 130px;
     border-radius: 10px;
-    z-index: -1;
-    opacity: 0.75;
+
+    opacity: 0.65;
+
+    &:hover {
+        transform: scale(1.05);
+        opacity: 1.0;
+    }
 }
 
 
@@ -136,12 +141,13 @@ a:hover {
 }
 
 .wrapped {
-    padding-top: 70px;
+    margin-top: 150px;
     font-weight: bold;
     font-size: 100px;
     color: #4ff20f;
     text-shadow: 2px 2px 0 #0c2802;
     flex-shrink: 0;
+    z-index: 1;
 }
 
 #month-title {
