@@ -144,6 +144,7 @@ a:hover {
     margin-top: 150px;
     font-weight: bold;
     font-size: 100px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     color: #4ff20f;
     text-shadow: 
         5px 0 0 #113a02,
@@ -181,6 +182,34 @@ section {
 div {
     scroll-snap-align: start;
     scroll-snap-stop: normal;
+}
+
+.jan-month {
+    min-height: 100vh;
+    display: flex;
+}
+
+.jan-month video {
+    width: 100%;
+    height: 600px;
+}
+
+#jan-heading h1 {
+    font-size: 7rem;
+    color: rgb(0, 133, 222);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 
+        5px 0 0 #113a02,
+       -2px 0 0 #113a02,
+        0 2px 0 #113a02,
+        0 -2px 0 #113a02
+        ;
+}
+
+.char {
+    transform: translateY(115px);
+    transition: transform .5s;
 }
 
 .jan-header {
