@@ -3,7 +3,6 @@
 document.addEventListener("DOMContentLoaded", (event) => {
   gsap.registerPlugin(ScrollTrigger)
   // gsap code here!
-  const janHeading = new SplitType('#jan-heading', { types: 'chars'})
   const wrappedText = new SplitType('#wrapped', { types: 'chars'})
 
   gsap.to(wrappedText.chars, {
