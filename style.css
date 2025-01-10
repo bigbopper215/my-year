@@ -189,9 +189,27 @@ div {
     padding-left: 2rem;
     position: relative;
     min-height: 100vh;
+    max-height: 100vh;
     /* background-color: #00ff994f; */
-    background-color: rgb(78,107,151);
+    background-color: rgb(25, 34, 49);
 }
+
+.bottom-bar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(209, 134, 249);
+    font-size: 20px;
+}
+
+.fill-bar-right, .fill-bar-left {
+    background-color: rgb(209, 134, 249);
+    width: 400px;
+    height: 5px;
+}
+
+
 
 .intro-extended img {
     padding-top: 60px;
@@ -199,37 +217,69 @@ div {
     right: 0;
     top: 0;
     height: 538px;
-    width: 750px;
+    width: 800px;
     z-index: 1;
 }
 
 .thanks-text {
     margin-top: 60px;
     width: 600px;
-    font-size: 22px;
-    margin-bottom: 96px;
+    font-size: 29px;
+    font-weight: 900;
+    margin-bottom: 88px;
+    color: rgb(253, 232, 163);
+}
+
+.intro-extended h1 {
+    /*
+    background: linear-gradient(45deg, #ffb8d4, #00ff4c, #66ccff, #00ff99);
+    animation: gradientShift 6s ease infinite;
+    background-size: 400% 400%;
+    rgb(219, 165, 248)
+    */
+    font-size: 25em;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-stroke: 5px rgb(253, 232, 163);
+    margin: 0;
+    position: relative;
+    z-index: 2;
+}
+
+
+.container1 p {
+    width: 600px;
     color: rgb(253, 232, 163);
 }
 
 .stats {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
     font-size: 20px;
     display: flex;
     justify-content: space-between;
     color: rgb(253, 232, 163);
-    padding-bottom: 20px;
+    margin: 0px;
+    height: min-content;
 }
 
-.stats p {
-    margin-bottom: 0px;
-    margin-top: 0px;
+
+.stat-name {
+    margin: 0px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.stat-num {
+    margin-top: 5px;
+    font-size: 2em;
+    font-weight: 600;
 }
 
 .stats div {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .bottom-bar{
@@ -240,20 +290,40 @@ div {
 
 }
 
-
-.intro-extended h1 {
-    font-size: 25em;
+.background-layer {
+    /*
     background: linear-gradient(45deg, #ffb8d4, #00ff4c, #66ccff, #00ff99);
     background-size: 400% 400%;
     -webkit-background-clip: text;
     color: transparent;
     animation: gradientShift 6s ease infinite;
+    color: rgb(253, 232, 163);
+    -webkit-text-stroke: 2px white;
+
+    -------------------------------------
+*/
     margin: 0;
     position: relative;
-    z-index: 2;
-    mix-blend-mode: screen;
+    z-index: 0;
+    background-color: rgb(253, 232, 163);
+    height: 557px;
+    width: 1100px;
 }
 
+.year-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    z-index: 3;
+}
+
+.year-title h1 {
+    position: relative;
+    font-size: 20em;
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+}
 
 @keyframes gradientShift {
     0% {
